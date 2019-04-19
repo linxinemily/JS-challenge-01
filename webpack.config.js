@@ -36,6 +36,33 @@ module.exports = {
                         'sass-loader'
                     ]
                 })
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i, //image loader
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images/'
+                        }
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.html$/, //在html中處理圖片的loader
+                use: [ {
+                    loader: 'html-loader',
+                    options: {
+                    minimize: true
+                    }
+                }],
             }
         ]
     },
