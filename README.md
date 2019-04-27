@@ -1,12 +1,4 @@
-# simple-webpack-boilerplate
-Webpack 4 with SCSS/CSS, ES6, and BrowserSync
+# JS地下城 F1 九九乘法表
 
-#### npm install
-```
-npm install
-```
-
-#### compile and serve (with BrowserSync)
-```
-npm run watch
-```
+#### 簡介
+拿了之前做的簡陋 webpack 包當開發環境，順便練最近正在研究的 Typescript （其實沒幾行XD），也是第一次用 CSS Grid，用了基本的幾個屬性，覺得酷！
