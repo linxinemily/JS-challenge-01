@@ -8,7 +8,9 @@
     "start": "webpack  --mode development",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --hot",
-    "watch": "webpack --watch --mode development"
+    "watch": "webpack --watch --mode development",
+    "predeploy": "yarn build", 
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -36,8 +38,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.4.0",
     "mini-css-extract-plugin": "^0.5.0",
     "popper.js": "^1.15.0"
-  }
+  },
+  "homepage": "https://linxinemily.github.io/JS-challenge-01/"
 }

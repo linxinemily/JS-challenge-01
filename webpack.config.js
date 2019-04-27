@@ -12,7 +12,7 @@ module.exports = {
     ],
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname,'docs')
+        path: path.resolve(__dirname,'build')
     },
     module: {
         rules: [
@@ -80,7 +80,7 @@ module.exports = {
          new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
-            server: { baseDir: ['docs'] }
+            server: { baseDir: ['build'] }
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
