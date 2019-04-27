@@ -27,23 +27,27 @@ h1, h2, h3, h4 { color: $color-primary }
         display: flex;
         align-items: flex-end;
         text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-around;
+        height: 350px;
         color: $color-primary;
         font-size: 24px;
         background-color: $color-white;
         padding: 40px;
         border-radius: 100px 0 100px 0;
         box-shadow: 0 3px 10px #D8D8D8;
-        &-left, &-right {
-            flex: 0 0 50%;
-            .title {
-                font-weight: 700;
-                font-size: 100px;
-                line-height: 126px;
-                text-shadow: 2px 2px 0 $color-white, 4px 4px 0 $color-lightGray;
-            }
-        }
     }
 }
+
+.title {
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 128px;
+    text-shadow: 2px 2px 0 $color-white, 4px 4px 0 $color-lightGray;
+}
+
 .line {
     height: 1px;
     width: 100%;
