@@ -10,6 +10,7 @@ body, html {
 h1, h2, h3, h4 { color: $color-primary }
 .ch-title { font-size: 56px; }
 .en-title { font-size: 24px; }
+.container { max-width: 960px; }
 
 .grid {
     display: grid;
